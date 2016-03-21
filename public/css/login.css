@@ -1,0 +1,84 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background: url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.loginBox {
+  border: 1.8em solid rgba(255,255,255,0.75);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  font-size: 0.8em;
+  background-color: rgba(0,0,0,0.3);
+  padding: 25px;
+}
+.loginBox-greeter {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: 1.75em;
+}
+form {
+  display: flex;
+  flex-flow: column;
+  font-size: inherit;
+}
+.loginBox-fields {
+  display: flex;
+  flex-flow: column;
+}
+input[type="email"], input[type="password"], input[type="text"] {
+  transition: all 0.2s ease;
+  font-size: inherit;
+  border: 0;
+  background-color: inherit;
+  color: rgba(255,255,255,0.75);
+  border-bottom: 0.2em solid rgba(255,255,255,0.25);
+  margin: 10px 0;
+  width: 200px;
+}
+input[type="email"]:focus, input[type="email"]:hover,
+input[type="password"]:focus, input[type="password"]:hover,
+input[type="text"]:focus, input[type="text"]:hover {
+  border-bottom-color: rgba(255,255,255,1);
+}
+input[type="submit"] {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0);
+  color: rgba(255,255,255,0.5);
+  border: 0;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+input[type="submit"]:hover {
+  color: rgba(255,255,255,1);
+}
+input:invalid {
+    box-shadow: none;
+}
+.loginBox-text {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: rgba(255,255,255,0.4);
+  text-decoration: underline;
+}
+.loginBox-text:hover {
+  color:rgba(255,255,255,0.75);
+}
+.loginBox-submits {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
