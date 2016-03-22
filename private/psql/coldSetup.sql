@@ -1,13 +1,11 @@
 
 CREATE TABLE users (
-  id            SERIAL    PRIMARY KEY,
-  email         TEXT      NOT NULL UNIQUE,
+  email         TEXT      PRIMARY KEY,
   username      TEXT      NOT NULL,
   currency      MONEY     NOT NULL DEFAULT 0,
   password      TEXT      NOT NULL
 );
 
-INSERT INTO USERS (id, email, username, currency, password)
-  VALUES (DEFAULT, "admin@gmail.com", "admin", "$9999",
-    "$2y$10$pH3DbamVdsme9grzjHkoX.zWU1litz4PdfnSpVnqWEx.7qFWc1JIa");
+INSERT INTO users (email, username, currency, password)
+  VALUES ('admin@gmail.com', 'admin', '$9999', '5f4dcc3b5aa765d61d8327deb882cf99');
 /* $pw = password_hash("password")*/

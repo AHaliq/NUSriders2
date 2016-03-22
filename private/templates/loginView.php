@@ -13,7 +13,7 @@
 <body>
   <div class="loginBox">
     <div class="loginBox-greeter">NUSRiders</div>
-    <form action="submit" name="login" method="get" accept-charset="utf-8">
+    <form action="./index.php" method="post" accept-charset="utf-8">
       <div class="loginBox-fields">
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
@@ -25,7 +25,9 @@
     <div id="reglogToggle" class="loginBox-text">Register</div>
   </div>
 </body>
+
 <script src="./js/login.js"></script>
+<!-- LOAD JS -->
 </html>
 
 <!--

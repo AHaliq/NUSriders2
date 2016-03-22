@@ -24,7 +24,7 @@ body {
   padding: 25px;
 }
 .loginBox-greeter {
-  color: white;
+  color: rgba(255,255,255,0.75);
   margin-bottom: 15px;
   font-weight: bolder;
   font-size: 1.75em;
