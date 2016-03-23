@@ -19,6 +19,9 @@
         <input type="password" name="password" placeholder="Password" required />
         <input id="loginBox-nameField" type="text" name="name" placeholder="Username" required />
       </div>
+      <div id="loginBox-error">
+        <?php if($_SESSION['msg']) echo $_SESSION['msg']; ?>
+      </div>
       <input id="loginBox-button" type="submit" name="submit" value="Login" />
     </form>
     <div class="loginBox-text">forget password?</div>

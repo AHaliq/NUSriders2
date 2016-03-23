@@ -1,17 +1,18 @@
 <?php
 define('INCLUDE_CHECK',true);
 
+session_start();
+$_SESSION = array();
+// create session object
+
 if($_POST['submit']) {
-  $thing = $_POST['email'];
-    echo "<script type='text/javascript'>alert('$thing');</script>";
   $email = strip($_POST['email']);
   $password = md5(strip($_POST['password']));
   // parse user input
   require '../private/php/connect.php';
   // connect to database
-  $message = "hi";
+
   if($_POST['submit'] == "Login") {
-  // login button event
     $row = pg_fetch_assoc(pg_query("
       SELECT email, username, password
       FROM users
@@ -19,20 +20,37 @@ if($_POST['submit']) {
     "));
     // query if email password combo exists
     if($row['email']) {
-      $message = "SUCESS";
-      // user exists
+    // user exists
+      gotoApplication($row['username'], $email);
     }else {
-      $username = strip($_POST['name']);
-      $message = "FAIL TO LOGIN";
-      // user does not exist
+    // wrong credentials
+      $_SESSION['msg'] = "invalid email or password";
     }
+    // LOGIN BUTTON EVENT -----------------------------------------------------
   }else if($_POST['submit'] == "Register") {
-  // register button event
-    $message = "APER KO BUAT";
+    $username = strip($_POST['name']);
+    // parse user input
+    $row = pg_fetch_assoc(pg_query("
+      SELECT email, username, password
+      FROM users
+      WHERE email = '{$email}'
+    "));
+    // query if email already registered
+    if($row['email']) {
+    // user already exists
+      $_SESSION['msg'] = "email is already registered";
+    }else {
+    // able to create new user
+      pg_query("
+        INSERT INTO users (email, username, currency, password)
+        VALUES ('{$email}', '{$username}', '$50', '{$password}')");
+      gotoApplication($username, $email);
+    }
+    // REGISTER BUTTON EVENT --------------------------------------------------
   }
-  echo "<script type='text/javascript'>alert('$message');</script>";
 }
-// SUBMIT CONTROLLER ----------------------------------------------------------
+// CONTROLLER
+// ============================================================================
 
 /*
 Remove characters to prevent sql injection
@@ -40,6 +58,17 @@ Remove characters to prevent sql injection
 */
 function strip($txt) {
   return pg_escape_string(stripslashes(strip_tags($txt)));
+}
+
+/*
+Take arguments as session variables and go to main application
+*/
+function gotoApplication($usr, $eml) {
+  $_SESSION['username'] = $usr;
+  $_SESSION['email'] = $eml;
+  // save session data
+  header("Location: ./logout.php");
+  // go to application
 }
 
 // METHODS

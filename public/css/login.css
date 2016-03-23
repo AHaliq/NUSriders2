@@ -82,3 +82,8 @@ input:invalid {
   justify-content: center;
   margin-bottom: 25px;
 }
+#loginBox-error {
+  margin-bottom: 5px;
+  color: red;
+  text-align: center;
+}

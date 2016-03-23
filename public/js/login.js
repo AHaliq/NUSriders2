@@ -10,6 +10,8 @@ tog.txts = ["not yet registered?", "have an account?"]
 tog.nField = document.getElementById("loginBox-nameField");
 /** submit button DOM */
 tog.btn = document.getElementById("loginBox-button");
+/** error text */
+tog.err = document.getElementById("loginBox-error");
 /** fix reference to container DOM */
 tog.nParent = tog.nField.parentElement;
 
@@ -33,6 +35,7 @@ tog.chng = function() {
   tog.innerHTML = tog.txts[tog.state];
   if(tog.state == 0) tog.nParent.removeChild(tog.nField);
   else tog.nParent.appendChild(tog.nField);
+  tog.err.innerHTML = "";
 }
 /** click event binded to toggle text object */
 tog.onclick = tog.chng;
