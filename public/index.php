@@ -67,7 +67,7 @@ function gotoApplication($usr, $eml) {
   $_SESSION['username'] = $usr;
   $_SESSION['email'] = $eml;
   // save session data
-  header("Location: ./logout.php");
+  header("Location: ./search.php");
   // go to application
 }
 
