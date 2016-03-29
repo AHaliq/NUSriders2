@@ -1,0 +1,17 @@
+.list {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+}
+.list > .itemCard {
+  margin: 10px;
+}
+.list > .btnCard {
+  margin: 10px;
+}

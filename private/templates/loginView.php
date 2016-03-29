@@ -6,6 +6,8 @@
   <title>NUSRiders - Login</title>
   <!-- META -->
   <link href="./css/login.css" type="text/css" rel="stylesheet"/>
+  <link href="./css/layout.css" type="text/css" rel="stylesheet"/>
+  <link href="./css/field.css" type="text/css" rel="stylesheet"/>
   <!-- STYLES -->
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <!-- CDN IMPORTS -->
@@ -15,9 +17,9 @@
     <div class="loginBox-greeter">NUSRiders</div>
     <form action="./index.php" method="post" accept-charset="utf-8">
       <div class="loginBox-fields">
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="password" name="password" placeholder="Password" required />
-        <input id="loginBox-nameField" type="text" name="name" placeholder="Username" required />
+        <input class="input" type="email" name="email" placeholder="Email" required />
+        <input class="input" type="password" name="password" placeholder="Password" required />
+        <input class="input" id="loginBox-nameField" type="text" name="name" placeholder="Username" required />
       </div>
       <div id="loginBox-error">
         <?php if($_SESSION['msg']) echo $_SESSION['msg']; ?>

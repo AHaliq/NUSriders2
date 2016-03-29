@@ -1,0 +1,11 @@
+body{
+  background-color: #282520;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+.sbox {
+  padding: 10px;
+}
+#list {
+  background-color: #a9a08f;
+}
