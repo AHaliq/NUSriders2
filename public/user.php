@@ -27,8 +27,6 @@ if($row['email']) {
   $_SESSION['pg_currency'] = $row['currency'];
   $_SESSION['pg_ownself'] = $email == $emlSs;
   include '../private/templates/userView.php';
-  // generate routes list
-  // (no advertize button if user != username)
   // generate in pending rides list
   // (book button if user != username)
   // (cancel button if user == username)

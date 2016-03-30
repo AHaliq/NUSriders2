@@ -74,10 +74,11 @@ function makeRTU(id) {
   this.updateFieldName(1, "To");
   // END OF IMPLEMENTATION
 }
+//from, to, trip start, capacity, cost per head
 
 /** Make search results entities */
 function makeAB(id) {
-  var fields = 2;
+  var fields = 5;
   var buttonLabel = "book";
 
   this.card = document.createElement('div');
@@ -114,6 +115,9 @@ function makeAB(id) {
   // setup interface
   this.updateFieldName(0, "From");
   this.updateFieldName(1, "To");
+  this.updateFieldName(2, "Trip Start");
+  this.updateFieldName(3, "Capacity");
+  this.updateFieldName(4, "Cost to Join");
   // END OF IMPLEMENTATION
 }
 

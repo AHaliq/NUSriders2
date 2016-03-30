@@ -14,6 +14,7 @@
   <body>
     <div id="pbox">
       <div id="logout" onclick="location.href='./index.php'">logout</div>
+      <div id="back" onclick="location.href='./search.php'">back to search</div>
       <img src="./img/userIcon.png" alt="userimg" width="150px" height="150px">
       <h1><?php echo $_SESSION['pg_username'] ?></h1>
       <?php if($_SESSION['pg_ownself'] || $_SESSION['isadm'])
