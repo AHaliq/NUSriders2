@@ -68,6 +68,9 @@ function makeAB(id) {
   var BUTTON = 3;
   this.updateDriverName = function (driver) {
     this.card.childNodes[HEAD].childNodes[HEAD_NAMEFIELD].childNodes[0].nodeValue = driver;
+    this.card.childNodes[HEAD].onclick = function() {
+      window.location.href = "./user.php?user=" + driver;
+    }
   };
   /** ensure row index exists otherwise it will fuck up */
   this.updateFieldName = function(row, field) {
@@ -132,7 +135,7 @@ function makeEntityHead() {
   cont.appendChild(icNm);
 
   cont.onclick = function() {
-    window.location.href = './profilePage.html';
+    window.location.href = "./user.php?user=-";
   }
   return cont;
 }

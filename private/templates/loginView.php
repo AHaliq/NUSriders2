@@ -32,13 +32,5 @@
 </body>
 
 <script src="./js/login.js"></script>
-<!-- LOAD JS -->
+<!-- load page main method -->
 </html>
-
-<!--
-<script
-      src="https://code.jquery.com/jquery-2.2.2.min.js"
-      integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
-      crossorigin="anonymous"></script>
-JQUERYYY
--->

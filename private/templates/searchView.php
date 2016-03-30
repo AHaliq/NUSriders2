@@ -10,7 +10,6 @@
     <link href="./css/search.css" type="text/css" rel="stylesheet"/>
     <link href="./css/cardStyle.css" type="text/css" rel="stylesheet"/>
     <link href="./css/listStyle.css" type="text/css" rel="stylesheet"/>
-
     <!-- STYLES -->
   </head>
   <body>
@@ -23,7 +22,7 @@
           <input id="pac-input-DT" class="input" type="text" placeholder="dd-MMM-yyyy hh:mm:ss">
         </a>
       </div>
-      <div class="profileBtn">
+      <div class="profileBtn" onclick="location.href='./user.php?user=<?php echo $_SESSION["username"] ?>'">
         <img src="./img/userIcon.png" alt="profile" width="25px" height="25px">
         <?php echo $_SESSION["username"] ?>
       </div>
