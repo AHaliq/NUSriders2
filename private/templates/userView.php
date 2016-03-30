@@ -21,14 +21,30 @@
       ?>
     </div>
     <div id="subnav">
-      <div class="subnav-btn subnav-btn-active">ROUTES</div>
-      <div class="subnav-btn">PENDING RIDES</div>
-      <?php if($_SESSION['pg_ownself'] || $_SESSION['isadm'])
-        echo '<div class="subnav-btn">COMPLETED RIDES</div>';
-      ?>
+      <div
+        class="subnav-btn <?php
+          if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) echo "subnav-btn-active"; ?>"
+        onclick="location.href='./user.php?user=<?php echo $email?>&amp;pg_view=1'">
+        ROUTES</div>
+      <div
+        class="subnav-btn <?php if($_GET['pg_view']==2) echo "subnav-btn-active"; ?>"
+        onclick="location.href='./user.php?user=<?php echo $email?>&amp;pg_view=2'">
+        PENDING RIDES</div>
+      <?php if($_SESSION['pg_ownself'] || $_SESSION['isadm']) { ?>
+        <div
+          class="subnav-btn <?php if($_GET['pg_view']==3) echo "subnav-btn-active"; ?>"
+          onclick="location.href='./user.php?user=<?php echo $email?>&amp;pg_view=3'">
+          COMPLETED RIDES</div>
+      <?php } ?>
     </div>
     <div id="list" class="list">
-
+      <?php if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) { ?>
+        lorem
+      <?php }else if($_GET['pg_view']==2) {?>
+        fokin
+      <?php }else if($_GET['pg_view']==3) {?>
+        ipsum
+      <?php } ?>
     </div>
   </body>
   <script src="./js/listMaker.js"></script>

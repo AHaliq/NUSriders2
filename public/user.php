@@ -35,8 +35,6 @@ if($row['email']) {
   // (show passengers if user == username || admin)
   // generate past rides list if user == username || admin
 
-//TODO create GET variable to identify user list view type
-//TODO generate active class by GET
 //TODO php select 3 different js inits based on GET variable
 }else {
   echo "dier tak de";
