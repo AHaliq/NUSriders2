@@ -46,6 +46,35 @@ function makeRTP(id) {
   // END OF IMPLEMENTATION
 }
 
+function makeRTU(id) {
+  var fields = 2;
+
+  this.card = document.createElement('div');
+  this.card.setAttribute('class', "itemCard");
+
+  this.card.appendChild(makeEntityMap(id));
+  this.card.appendChild(makeEntityDataCont(fields));
+
+  var FIELDS = 1;
+  var FIELDS_ROW_LABEL = 0;
+  var FIELDS_ROW_VALUE = 1;
+  this.updateDriverName = function (driver) {
+
+  };
+  /** ensure row index exists otherwise it will fuck up */
+  this.updateFieldName = function(row, field) {
+    this.card.childNodes[FIELDS].childNodes[row].childNodes[FIELDS_ROW_LABEL].childNodes[0].nodeValue = field;
+  }
+
+  this.updateFieldValue = function(row, value) {
+    this.card.childNodes[FIELDS].childNodes[row].childNodes[FIELDS_ROW_VALUE].childNodes[0].nodeValue = value;
+  }
+  // setup interface
+  this.updateFieldName(0, "From");
+  this.updateFieldName(1, "To");
+  // END OF IMPLEMENTATION
+}
+
 /** Make search results entities */
 function makeAB(id) {
   var fields = 2;

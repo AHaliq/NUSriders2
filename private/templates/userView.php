@@ -41,9 +41,12 @@
 
     </div>
   </body>
-  <?php if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) { ?>
-    <script>var tpe = 1;</script>
-  <?php }else if($_GET['pg_view']==2) {?>
+  <?php if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) {
+    if($email == $emlSs) { ?>
+    <script>var tpe = 10;</script>
+  <?php }else {?>
+    <script>var tpe = 11;</script>
+  <?php }}else if($_GET['pg_view']==2) {?>
     <script>var tpe = 2;</script>
   <?php }else if($_GET['pg_view']==3 && $_SESSION['pg_ownself'] || $_SESSION['isadm']) {?>
     <script>var tpe = 3;</script>
