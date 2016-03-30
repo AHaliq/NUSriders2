@@ -8,6 +8,8 @@
   align-items: stretch;
   justify-content: space-around;
   overflow: auto;
+  box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
+  background-color: #d4cfc6;
 }
 .list > .itemCard {
   margin: 10px;

@@ -10,7 +10,7 @@ function init() {
   for(var i = 0; i < 13; i++) {
     var ent = list.addEntity(makeAB);
     // force create entities
-    ent.intf.updateDriverName("driver"+ i.toString());
+    ent.intf.updateDriverName("driver"+ i.toString(), "user"+ i.toString() + "@gmail.com");
     list.updateMarkers(i,
       "ChIJOdueMVIa2jERhE4TnhWtNpo",
       "ChIJSeUa7KcZ2jERNVg2CvmlVbk");

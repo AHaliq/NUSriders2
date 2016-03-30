@@ -1,0 +1,45 @@
+body{
+  background-color: #282520;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+#pbox {
+  flex-wrap: wrap;
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  padding: 20px 0 10px 0;
+  width: 100%;
+}
+#pbox > h1 {
+  text-transform: uppercase;
+  color: #d4cfc6;
+  margin-bottom: 5px;
+}
+#pbox-curr {
+  color: #d4cfc6;
+}
+#subnav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
+  background-color: #2f2c26;
+}
+.subnav-btn {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #d4cfc6;
+}
+.subnav-btn-active {
+  color: #8a6e41;
+}
+.subnav-btn:hover {
+  color: #b18d51;
+}

@@ -66,10 +66,10 @@ function makeAB(id) {
   var FIELDS_ROW_LABEL = 0;
   var FIELDS_ROW_VALUE = 1;
   var BUTTON = 3;
-  this.updateDriverName = function (driver) {
+  this.updateDriverName = function (driver, email) {
     this.card.childNodes[HEAD].childNodes[HEAD_NAMEFIELD].childNodes[0].nodeValue = driver;
     this.card.childNodes[HEAD].onclick = function() {
-      window.location.href = "./user.php?user=" + driver;
+      window.location.href = "./user.php?user=" + email;
     }
   };
   /** ensure row index exists otherwise it will fuck up */

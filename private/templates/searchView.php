@@ -22,7 +22,7 @@
           <input id="pac-input-DT" class="input" type="text" placeholder="dd-MMM-yyyy hh:mm:ss">
         </a>
       </div>
-      <div class="profileBtn" onclick="location.href='./user.php?user=<?php echo $_SESSION["username"] ?>'">
+      <div class="profileBtn" onclick="location.href='./user.php?user=<?php echo $_SESSION["email"] ?>'">
         <img src="./img/userIcon.png" alt="profile" width="25px" height="25px">
         <?php echo $_SESSION["username"] ?>
       </div>
