@@ -15,6 +15,7 @@
   </head>
   <body>
     <div class="sbox">
+      <h1>SEARCH</h1>
       <input id="pac-input-A" class = "input" type="search" placeholder="From" />
       <input id="pac-input-B" class = "input" type="search" placeholder="To" />
       <a href="javascript:NewCal('pac-input-DT','ddmmmyyyy',true,24)">

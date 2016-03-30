@@ -7,12 +7,16 @@ body{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
 }
 .sbox * {
   flex-grow: 1;
   margin: 10px;
+}
+.sbox > h1 {
+  flex-grow: 0;
+  color: #d4cfc6;
 }
 a > .input {
   width: 100%;

@@ -120,7 +120,7 @@ function makeEntityHead() {
   icCn.setAttribute('class', "userIconIC");
 
   var icIm = document.createElement('img');
-  icIm.src = "./img/userIcon3.png";
+  icIm.src = "./img/userIcon.png";
   //TODO load from db? else default
 
   var icNm = document.createElement('div');
