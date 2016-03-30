@@ -14,13 +14,19 @@
     <!-- STYLES -->
   </head>
   <body>
-    <div class="sbox">
+    <div id="sbox">
       <h1>SEARCH</h1>
-      <input id="pac-input-A" class = "input" type="search" placeholder="From" />
-      <input id="pac-input-B" class = "input" type="search" placeholder="To" />
-      <a href="javascript:NewCal('pac-input-DT','ddmmmyyyy',true,24)">
-        <input id="pac-input-DT" class="input" type="text" placeholder="dd-MMM-yyyy hh:mm:ss">
-      </a>
+      <div id="sbox-fields">
+        <input id="pac-input-A" class = "input" type="search" placeholder="From" />
+        <input id="pac-input-B" class = "input" type="search" placeholder="To" />
+        <a href="javascript:NewCal('pac-input-DT','ddmmmyyyy',true,24)">
+          <input id="pac-input-DT" class="input" type="text" placeholder="dd-MMM-yyyy hh:mm:ss">
+        </a>
+      </div>
+      <div class="profileBtn">
+        <img src="./img/userIcon.png" alt="profile" width="25px" height="25px">
+        <?php echo $_SESSION["username"] ?>
+      </div>
     </div>
     <div id="list" class="list">
 

@@ -13,3 +13,14 @@ body {
   min-height: 100%;
   font-size: 0.8em;
 }
+.profileBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #d4cfc6;
+  background-color: #282520;
+  padding: 0 10px;
+}
+.profileBtn * {
+  margin-right: 10px;
+}

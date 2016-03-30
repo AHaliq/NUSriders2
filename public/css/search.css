@@ -3,26 +3,40 @@ body{
   flex-flow: column;
   justify-content: flex-start;
 }
-.sbox {
-  display: flex;
+#sbox {
   flex-wrap: wrap;
+  display: flex;
   align-items: center;
   padding: 10px 0;
   width: 100%;
 }
-.sbox * {
+#sbox > h1 {
+  padding-left: 10px;
+  color: #d4cfc6;
+}
+#sbox-fields {
+  display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   margin: 10px;
 }
-.sbox > h1 {
-  flex-grow: 0;
-  color: #d4cfc6;
+#sbox-fields > * {
+  flex-grow: 1;
+  margin: 5px;
 }
-a > .input {
+#sbox-fields > a {
+
+}
+#sbox-fields > a > .input {
   width: 100%;
   margin: 0;
 }
 #list {
   box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
   background-color: #d4cfc6;
+}
+@media only screen and (max-width: 900px) {
+  #sbox {
+    flex-flow: column;
+  }
 }
