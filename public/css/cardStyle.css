@@ -4,13 +4,14 @@
   flex-wrap: nowrap;
   /* display */
   width: 200px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
   /* container */
   font-size: 0.75em;
   font-family: 'Lato', sans-serif;
-  color: #6C7A89;
-  background-color: rgb(253, 253, 253);
+  color: #b18d51;
+  background-color: white;
   /* content */
+  flex-grow: 1;
 }
 
 .userIC {
@@ -42,11 +43,15 @@
 
 .mapIC {
   height: 123px;
+  width: 200px;
+  max-width: 200px;
+  align-self: center;
   /* container */
 }
 
 .dataIC {
-
+  color: #282520;
+  flex-grow: 1;
 }
 .dataPartitionIC {
   display: flex;
@@ -60,7 +65,7 @@
   font-weight:600;
 }
 .valueDPIC {
-
+  color: #282520;
 }
 .pIC {
   padding: 2px 0px;
@@ -77,14 +82,14 @@
   /* container */
   font-weight: bold;
   text-align: center;
-  color: #3498db;
-  background-color: rgb(250,250,250);
+  color: inherit;
+  background-color: inherit;
   /* content */
 }
 .btnIC:hover {
   color: white;
-  background-color: #3498db;
-  padding: 20px 0px;
+  background-color: #b18d51;
+  padding: 10px 0;
   /* content */
 }
 .btnCard {

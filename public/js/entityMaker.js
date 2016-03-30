@@ -93,7 +93,7 @@ function makeAddRouteBtn() {
   var icCn = document.createElement('div');
   icCn.setAttribute('class', "btnIconIC");
   var icIm = document.createElement('img');
-  icIm.src = "../img/addIcon.png";
+  icIm.src = "./img/addIcon.png";
   icCn.appendChild(icIm);
   this.card.appendChild(icCn);
 
@@ -120,7 +120,7 @@ function makeEntityHead() {
   icCn.setAttribute('class', "userIconIC");
 
   var icIm = document.createElement('img');
-  icIm.src = "../img/userIcon3.png";
+  icIm.src = "./img/userIcon3.png";
   //TODO load from db? else default
 
   var icNm = document.createElement('div');

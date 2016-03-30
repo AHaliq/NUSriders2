@@ -66,6 +66,7 @@ Take arguments as session variables and go to main application
 function gotoApplication($usr, $eml) {
   $_SESSION['username'] = $usr;
   $_SESSION['email'] = $eml;
+  $_SESSION['isadm'] = $eml == "admin@gmail.com";
   // save session data
   header("Location: ./search.php");
   // go to application

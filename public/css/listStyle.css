@@ -5,12 +5,13 @@
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-around;
   overflow: auto;
 }
 .list > .itemCard {
   margin: 10px;
+  justify-content: center;
 }
 .list > .btnCard {
   margin: 10px;

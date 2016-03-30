@@ -4,8 +4,10 @@ body{
   justify-content: flex-start;
 }
 .sbox {
+  text-align: center;
   padding: 10px;
 }
 #list {
-  background-color: #a9a08f;
+  box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
+  background-color: #c3b79f;
 }

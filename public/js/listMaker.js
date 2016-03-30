@@ -38,6 +38,7 @@ function List(domID, id) {
     this.listDOM.removeChild(obj.obj);
     obj = null;
   }
+
   /** declare dom object into entity wrapper */
   function wrapEntity(entity) {
     return {
