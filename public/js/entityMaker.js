@@ -12,7 +12,7 @@ TODO consider inheritance of maker functions... but its so chim...
 
 /** make driver's routes entities */
 function makeRTP(id) {
-  var fields = 3;
+  var fields = 2;
   var buttonLabel = "advertize";
 
   this.card = document.createElement('div');
@@ -43,7 +43,6 @@ function makeRTP(id) {
   // setup interface
   this.updateFieldName(0, "From");
   this.updateFieldName(1, "To");
-  this.updateFieldName(2, "ALooo");
   // END OF IMPLEMENTATION
 }
 

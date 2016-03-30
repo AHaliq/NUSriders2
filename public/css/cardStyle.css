@@ -100,11 +100,12 @@
   align-items: center;
   border-style: dashed;
   padding: 25px;
-  height: 150px;
+  flex-grow: 1;
   border-color: rgb(0,0,0);
   color: rgb(0,0,0);
   opacity: 0.3;
   transition: all 0.2s ease;
+  flex-grow: 1;
 }
 .btnCard:hover {
   opacity: 0.6;

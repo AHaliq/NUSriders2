@@ -16,6 +16,9 @@ function init() {
       "ChIJSeUa7KcZ2jERNVg2CvmlVbk");
     // concrete fake entries of driver name and routes
   }
+  list.objs[3].intf.updateDriverName("admin", "admin@gmail.com");
+  list.objs[6].intf.updateDriverName("AHaliq", "haliq@nus.edu.sg");
+  // for testing GET to user page
   setTimeout(function() {
     list.updateMarkers(2,
       "ChIJHSrGJ5EZ2jERTzbUyme7KuQ",
