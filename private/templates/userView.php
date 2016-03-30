@@ -38,22 +38,24 @@
       <?php } ?>
     </div>
     <div id="list" class="list">
-      <?php if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) { ?>
-        lorem
-      <?php }else if($_GET['pg_view']==2) {?>
-        fokin
-      <?php }else if($_GET['pg_view']==3) {?>
-        ipsum
-      <?php } ?>
+
     </div>
   </body>
+  <?php if(!isset($_GET['pg_view']) || $_GET['pg_view']==1) { ?>
+    <script>var tpe = 1;</script>
+  <?php }else if($_GET['pg_view']==2) {?>
+    <script>var tpe = 2;</script>
+  <?php }else if($_GET['pg_view']==3) {?>
+    <script>var tpe = 3;</script>
+  <?php } ?>
+  <!-- store pg_view into js -->
   <script src="./js/listMaker.js"></script>
   <script src="./js/markerLoader.js"></script>
   <script src="./js/entityMaker.js"></script>
   <script src="./js/datetimepicker.js"></script>
   <script src="./js/googleUtils.js"></script>
   <!-- load libraries -->
-
+  <script src="./js/user.js"></script>
   <!-- load page main method -->
   <script src="https://maps.googleapis.com/maps/api/js?callback=init&libraries=places"
       async defer></script>
