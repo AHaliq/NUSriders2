@@ -27,8 +27,6 @@ if($row['email']) {
   $_SESSION['pg_currency'] = $row['currency'];
   $_SESSION['pg_ownself'] = $email == $emlSs;
   include '../private/templates/userView.php';
-  // generate user profile header
-  // (if user == username show tha money)
   // generate routes list
   // (no advertize button if user != username)
   // generate in pending rides list
@@ -37,6 +35,9 @@ if($row['email']) {
   // (show passengers if user == username || admin)
   // generate past rides list if user == username || admin
 
+//TODO create GET variable to identify user list view type
+//TODO generate active class by GET
+//TODO php select 3 different js inits based on GET variable
 }else {
   echo "dier tak de";
   //TODO goto 404 page

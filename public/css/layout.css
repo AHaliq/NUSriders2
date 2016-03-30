@@ -28,3 +28,15 @@ body {
 .profileBtn:hover {
   color: #b18d51;
 }
+#logout {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 0.8em;
+  color: #d4cfc6;
+  opacity: 0.8;
+}
+#logout:hover {
+  opacity: 1;
+}

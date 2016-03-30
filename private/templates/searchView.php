@@ -14,6 +14,7 @@
   </head>
   <body>
     <div id="sbox">
+      <div id="logout" onclick="location.href='./index.php'">logout</div>
       <h1>SEARCH</h1>
       <div id="sbox-fields">
         <input id="pac-input-A" class = "input" type="search" placeholder="From" />
