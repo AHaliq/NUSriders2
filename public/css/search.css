@@ -35,4 +35,7 @@ body{
   #sbox {
     flex-flow: column;
   }
+  #sbox > h1 {
+    padding-left: 0;
+  }
 }
