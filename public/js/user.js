@@ -13,11 +13,11 @@ function init() {
     break;
     case 20:
       for(var i = 0; i < 4; i++)
-        list.addCard(ASM.ABTripBook);
+        list.addCard(ASM.ABTripCancel);
     break;
     case 21:
       for(var i = 0; i < 4; i++)
-        list.addCard(ASM.ABTripCancel);
+        list.addCard(ASM.ABTripBook);
     break;
     case 3:
       for(var i = 0; i < 4; i++) {
