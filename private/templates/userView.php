@@ -56,11 +56,9 @@
     <script>var tpe = 3;</script>
   <?php }else { /*someone GET inject 3 even without permission, go to 404 */} ?>
   <!-- store pg_view into js -->
-  <script src="./js/listMaker.js"></script>
-  <script src="./js/markerLoader.js"></script>
-  <script src="./js/entityMaker.js"></script>
   <script src="./js/datetimepicker.js"></script>
   <script src="./js/googleUtils.js"></script>
+  <script src="./js/cardList.js"></script>
   <!-- load libraries -->
   <script src="./js/user.js"></script>
   <!-- load page main method -->

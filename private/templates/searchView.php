@@ -32,10 +32,8 @@
 
     </div>
   </body>
-  <script src="./js/listMaker.js"></script>
-  <script src="./js/markerLoader.js"></script>
-  <script src="./js/entityMaker.js"></script>
   <script src="./js/datetimepicker.js"></script>
+  <script src="./js/cardList.js"></script>
   <script src="./js/googleUtils.js"></script>
   <!-- load libraries -->
   <script src="./js/search.js"></script>
