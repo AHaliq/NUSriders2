@@ -10,6 +10,11 @@ List.prototype.addCard = function(assembler) {
   this.cards.push(card);
   this.dom.appendChild(card);
 }
+List.prototype.addSpecialCard = function(specialCardConstr) {
+  var card = specialCardConstr();
+  this.cards.push(card);
+  this.dom.appendChild(card);
+}
 List.prototype.removeCard = function(index) {
   this.dom.removeChild(this.cards[index]);
   this.cards.splice(index,1);
@@ -114,7 +119,7 @@ var ASM = {
     alert(this.clickdata);
     //TODO execute button click based on click data... most likely some function in clickdata
   },
-  makeAddBtnSegment : function(label, action) {
+  makeAddBtnCard : function(label, action) {
     var seg = ASM.makeDiv("btnCard");
     var imgCont = ASM.makeDiv("btnIconIC");
     imgCont.appendChild(ASM.makeImg("./img/addIcon.png"));
@@ -123,6 +128,12 @@ var ASM = {
     seg.appendChild(lbl);
     seg.onclick = action;
     return seg;
+  },
+  makeAddRouteBtnCard : function() {
+    return ASM.makeAddBtnCard("ADD NEW ROUTE", ASM._AddRouteNav);
+  },
+  _AddRouteNav : function() {
+    window.location.href = "./create.php";
   },
   // CARD FACTORY ===============================
   AB : function(card, id) {

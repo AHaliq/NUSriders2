@@ -5,6 +5,7 @@ function init() {
       for(var i = 0; i < 4; i++)
         list.addCard(ASM.ABRoute);
       //RTP
+      list.addSpecialCard(ASM.makeAddRouteBtnCard);
     break;
     case 11:
       for(var i = 0; i < 4; i++)
