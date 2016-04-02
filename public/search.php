@@ -15,9 +15,6 @@ $dt = $_POST['dt'];
 $rows = pg_fetch_all(pg_query("
 SELECT * FROM route
 "));
-// DBCONNECT Query all da bitches (DEFAULT)
-// DBCONNECT on POST(A, B, DT) do pyth search query
-// echo generate addEntity in list
 
 include '../private/templates/searchView.php';
 // RENDER VIEW ----------------------------------------------------------------
