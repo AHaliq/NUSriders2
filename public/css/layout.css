@@ -9,9 +9,11 @@ html {
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-flow: column;
   min-height: 100%;
   font-size: 0.8em;
+  background-color: #282520;
 }
 .profileBtn {
   transition: all 0.2s ease;
@@ -44,4 +46,14 @@ body {
 }
 #back {
   left: 2px;
+}
+.box {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+}
+.box > h1 {
+  color: #d4cfc6;
 }

@@ -1,18 +1,5 @@
-body{
-  background-color: #282520;
-  flex-flow: column;
-  justify-content: flex-start;
-}
-#sbox {
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  width: 100%;
-}
-#sbox > h1 {
+.box > h1 {
   padding-left: 10px;
-  color: #d4cfc6;
 }
 #sbox-fields {
   display: flex;
@@ -32,10 +19,10 @@ body{
   margin: 0;
 }
 @media only screen and (max-width: 900px) {
-  #sbox {
+  .box {
     flex-flow: column;
   }
-  #sbox > h1 {
+  .box > h1 {
     padding-left: 0;
   }
 }

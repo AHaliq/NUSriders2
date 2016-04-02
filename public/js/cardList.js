@@ -181,16 +181,11 @@ var ASM = {
     //* potential error if same marker gets updated twice and latest update
     // arrives before old update
     // update placename
-    var allLoaded = true;
-    for(var i = 0; i < gMarker.card.mLoaded.length; i++) {
-      if(!gMarker.card.mLoaded[i]) allLoaded = false;
-    }
-    if(allLoaded) {
-      var bounds = new google.maps.LatLngBounds();
-      bounds.extend(gMarker.card.gMarkers[0].getPosition());
-      bounds.extend(gMarker.card.gMarkers[1].getPosition());
-      gMarker.card.gMapObj.fitBounds(bounds);
-    }
+    if(gMarker.card.mLoaded[0] && gMarker.card.mLoaded[1])
+      GUTIL.setMapBounds(
+        gMarker.card.gMapObj,
+        gMarker.card.gMarkers[0],
+        gMarker.card.gMarkers[1]);
     // update map bounds and zoom onall loaded
   },
   ABTrip : function(card, id, label) {

@@ -12,7 +12,7 @@
     <!-- STYLES -->
   </head>
   <body>
-    <div id="pbox">
+    <div class="box">
       <div id="logout" onclick="location.href='./index.php'">logout</div>
       <div id="back" onclick="location.href='./search.php'">back to search</div>
       <img src="./img/userIcon.png" alt="userimg" width="150px" height="150px">

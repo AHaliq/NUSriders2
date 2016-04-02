@@ -1,19 +1,9 @@
-body{
-  background-color: #282520;
+.box {
   flex-flow: column;
-  justify-content: flex-start;
-}
-#pbox {
-  flex-wrap: wrap;
-  flex-flow: column;
-  display: flex;
-  align-items: center;
   padding: 20px 0 10px 0;
-  width: 100%;
 }
-#pbox > h1 {
+.box > h1 {
   text-transform: uppercase;
-  color: #d4cfc6;
   margin-bottom: 5px;
 }
 #pbox-curr {

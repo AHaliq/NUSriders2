@@ -16,6 +16,12 @@ var GUTIL = {
       draggable: false
     });
   },
+  setMapBounds : function(gMapObj) {
+    var bounds = new google.maps.LatLngBounds();
+    for(var i = 1; i < arguments.length; i++)
+      bounds.extend(arguments[i].getPosition());
+    gMapObj.fitBounds(bounds);
+  },
   makeService : function(gMapObj) {
     return new google.maps.places.PlacesService(gMapObj);
   },

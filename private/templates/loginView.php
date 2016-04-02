@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NUSRiders - Login</title>
   <!-- META -->
-  <link href="./css/login.css" type="text/css" rel="stylesheet"/>
   <link href="./css/layout.css" type="text/css" rel="stylesheet"/>
+  <link href="./css/login.css" type="text/css" rel="stylesheet"/>
   <link href="./css/field.css" type="text/css" rel="stylesheet"/>
   <!-- STYLES -->
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>

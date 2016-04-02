@@ -2,6 +2,9 @@ html {
   background: url('../img/bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+body {
+  justify-content: flex-start;
+}
 .loginBox {
   display: flex;
   align-items: center;

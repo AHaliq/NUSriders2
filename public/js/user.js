@@ -18,6 +18,7 @@ function init() {
     case 21:
       for(var i = 0; i < 4; i++)
         list.addCard(ASM.ABTripBook);
+      //TODO IF CAPACITY IS FULL, make without book button
     break;
     case 3:
       for(var i = 0; i < 4; i++) {
