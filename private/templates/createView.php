@@ -16,6 +16,10 @@
   <body>
     <div class="box">
       <h1>CREATE</h1>
+      <div class="box-fields">
+        <input id="pac-input-A" class = "input" type="search" placeholder="From" />
+        <input id="pac-input-B" class = "input" type="search" placeholder="To" />
+      </div>
     </div>
     <div id="mapR"></div>
   </body>

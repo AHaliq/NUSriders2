@@ -1,20 +1,17 @@
 .box > h1 {
   padding-left: 10px;
 }
-#sbox-fields {
+.box-fields {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 10px;
 }
-#sbox-fields > * {
+.box-fields > * {
   flex-grow: 1;
   margin: 5px;
 }
-#sbox-fields > a {
-
-}
-#sbox-fields > a > .input {
+.box-fields > a > .input {
   width: 100%;
   margin: 0;
 }

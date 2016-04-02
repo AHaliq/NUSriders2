@@ -5,3 +5,13 @@
   background-color: red;
   flex-grow: 1;
 }
+.box-fields {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin: 10px;
+}
+.box-fields > * {
+  flex-grow: 1;
+  margin: 5px;
+}
