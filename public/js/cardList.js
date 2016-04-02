@@ -220,7 +220,7 @@ var ASM = {
   },
   ABRoute : function(card, id) {
     ASM.AB(card,id);
-    card.appendSegment(ASM.makeButtonSegment("Advertize"));
+    card.appendSegment(ASM.makeButtonSegment("Offer"));
   }
   // ASSEMBLERS =================================
 };
