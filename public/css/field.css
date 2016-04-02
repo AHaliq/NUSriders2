@@ -18,3 +18,15 @@
 input:invalid {
   box-shadow: none;
 }
+#createBtn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  padding: 5px;
+  align-self: stretch;
+  color: #d4cfc6;
+}
+#createBtn:hover {
+  padding: 20px;
+  background-color: #b18d51;
+}

@@ -1,8 +1,8 @@
 
 #mapR {
+  box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
   height: 100%;
   width: 100%;
-  background-color: red;
   flex-grow: 1;
 }
 .box-fields {
@@ -14,16 +14,4 @@
 .box-fields > * {
   flex-grow: 1;
   margin: 5px;
-}
-#createBtn {
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
-  width: 100%;
-  padding: 5px;
-  color: #d4cfc6;
-}
-#createBtn:hover {
-  padding: 20px;
-  background-color: #b18d51;
 }

@@ -10,7 +10,8 @@ function init() {
     alert(map.A.pobj.place_id + map.A.pobj.geometry.location.lat())
     //FINALIZE USER SCHEMA
     //IMPLEMENT ROUTE/PROPOSAL/RIDE SCHEMAS
-    //INSERT VALUE HERE TO DB
+    //check if exact route already exists for user
+    //insert route to db
   }
   // setup btn
 
