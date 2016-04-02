@@ -15,6 +15,8 @@
   </head>
   <body>
     <div class="box">
+      <div id="logout" onclick="location.href='./index.php'">logout</div>
+      <div id="back" onclick="location.href='./search.php'">back to search</div>
       <h1>CREATE</h1>
       <div class="box-fields">
         <input id="pac-input-A" class = "input" type="search" placeholder="From" />
@@ -22,6 +24,9 @@
       </div>
     </div>
     <div id="mapR"></div>
+    <div id="createBtn">
+      CREATE ROUTE
+    </div>
   </body>
   <script src="./js/cardList.js"></script>
   <script src="./js/googleUtils.js"></script>

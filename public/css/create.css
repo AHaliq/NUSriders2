@@ -15,3 +15,15 @@
   flex-grow: 1;
   margin: 5px;
 }
+#createBtn {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  color: #d4cfc6;
+}
+#createBtn:hover {
+  padding: 20px;
+  background-color: #b18d51;
+}
